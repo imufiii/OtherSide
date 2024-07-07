@@ -30,6 +30,8 @@ class ProjectAdapter(private val projectList: List<Project>, private val listene
             binding.projectDescription.text = project.description
             binding.projectGithubLink.text = project.githubLink
 
+//          loadProfilePicture(binding.profilePicture, project.profilePictureUrl)
+
             binding.root.setOnClickListener {
                 listener.onItemClick(project)
             }
